@@ -168,8 +168,8 @@ pipeline
                  echo "done printing"
                
                  def s3BucketName = "01-prod-uction-${deployToLC}" 
-//                 echo "s3BucketName name is:"
-//                 echo "'$s3BucketName'"
+                 echo "s3BucketName name is:"
+                 echo "'$s3BucketName'"
 
 		 if ("$bucketResult".toString().equals("$s3BucketName".toString())) {  
                     echo "terraform bucket already exists."
