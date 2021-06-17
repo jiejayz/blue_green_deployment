@@ -209,7 +209,7 @@ pipeline
       {
         steps
         {
-           echo "Starting --- terraform deploy and start"
+           echo "Starting --- terraform destroy and start"
 
            sh 'pwd'
            script {
