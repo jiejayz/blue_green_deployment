@@ -11,7 +11,7 @@ pipeline
     amiNameTag = ""
     amiNameTagValue = "";
     thisTestNameVar = "";
-    thisTestValue = "exploratory-testing";
+    thisTestValue = "blue-green";
     ProjectName = "01-Build";
     fileProperties = "file.properties"
     old_environment = "";
