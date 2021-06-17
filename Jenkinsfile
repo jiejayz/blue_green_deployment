@@ -171,12 +171,12 @@ pipeline
                  echo "s3BucketName name is:"
                  echo "'$s3BucketName'"
 
-		 if ("$bucketResult".toString().equals("$s3BucketName".toString())) {  
-                    echo "terraform bucket already exists."
-                 } else {
+//		 if ("$bucketResult".toString().equals("$s3BucketName".toString())) {  
+//                    echo "terraform bucket already exists."
+//                 } else {
                     sh 'aws s3 mb s3://"$s3BucketName".toString() --region us-west-1'
                     echo "Created terraform bucket."
-                 }
+//                 }
 
 
                  echo "update terraform variables "
