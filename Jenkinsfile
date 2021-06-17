@@ -123,6 +123,7 @@ pipeline
 
                  sh 'pwd'
                  sh 'ls -l'
+		 sh 'rm -fr .t*'
                  sh '/usr/local/bin/terraform init -input=false'
                  sh '/usr/local/bin/terraform plan'
                  sh '/usr/local/bin/terraform apply -auto-approve'
