@@ -153,7 +153,7 @@ pipeline
                  echo "Checking if terraform s3 boostrap bucket for ${deployToLC} environment exists"
 
                  // Check if bucket exists before creating it. This is used by terraform to save the state file
-                 aws_list_bucket = "aws s3api list-buckets --query \"Buckets[].Name\" | grep \"01-prod-${deployToLC}\" | awk '{print \$1}'  | awk '{print substr(\$1,2); }' | awk '{print substr(\$1, 1, length(\$1)-2)}'"
+                 aws_list_bucket = "aws s3api list-buckets --query \"Buckets[].Name\" | grep \"01-prod-uction-${deployToLC}\" | awk '{print \$1}'  | awk '{print substr(\$1,2); }' | awk '{print substr(\$1, 1, length(\$1)-2)}'"
 
 
                  echo "aws_list_bucket string is: $aws_list_bucket"
@@ -167,7 +167,7 @@ pipeline
                  echo "'$bucketResult'"
                  echo "done printing"
                
-                 def s3BucketName = "01-prod-${deployToLC}" 
+                 def s3BucketName = "01-prod-uction-${deployToLC}" 
                  echo "s3BucketName name is:"
                  echo "'$s3BucketName'"
 
