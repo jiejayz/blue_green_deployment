@@ -175,8 +175,8 @@ pipeline
 		 if ("$bucketResult".toString().equals("$s3BucketName".toString())) {  
                     echo "terraform bucket already exists."
                  } else {
-                    sh 'aws s3 mb s3://"$s3BucketName".toString() --region us-west-1'
-//                    sh 'aws s3 mb s3://01-prod-uction-green --region us-west-1'
+//                    sh 'aws s3 mb s3://"$s3BucketName".toString() --region us-west-1'
+                    sh 'aws s3 mb s3://01-prod-uction-green --region us-west-1'
 			 
                     echo "Created terraform bucket."
                  }
