@@ -33,7 +33,7 @@ variable "Tool" {
 
 variable "prod_environment" {
   description = "Identifies the deployment location: blue or green"
-  default     = "PRODUCTION"
+  default     = "PRODUCTION-BLUE"
 }
 
 variable "availability_zones" {
