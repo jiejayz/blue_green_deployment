@@ -6,13 +6,13 @@ data "aws_ami" "instance_ami" {
   }
 }
 
-data "aws_vpc" "production_blue" {
+data "aws_vpc" "production" {
   tags = {
     Environment = var.prod_environment
   }
 }
 
-data "aws_internet_gateway_blue" "gw" {
+data "aws_internet_gateway" "gw" {
   tags = {
     Environment = var.prod_environment
   }
